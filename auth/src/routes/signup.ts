@@ -19,7 +19,6 @@ router.post('/api/users/signup', [
   }
   console.log('Creating');
   const { email, password } = req.body;
-  throw new DatabaseConnectionError();
   res.status(200).send({
     email,
     password,
